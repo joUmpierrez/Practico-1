@@ -1,51 +1,79 @@
 import java.util.Scanner;
-import java.lang.*;
 
 public class Operadores {
 	
 	static Scanner entrada = new Scanner(System.in);
 	
+	// Consola
 	public static void main(String[] args) {
 		// Ejercicio 1
+		System.out.println("Suma de Impares entre 1 y 50");
 		SumaImpares();
+		System.out.print("\n");
 		
 		// Ejercicio 2
-		System.out.println("Ingrese en Numero");
+		System.out.println("Ingrese un Numero");
 		int n1 = entrada.nextInt();
-		System.out.println("Ingrese en Numero");
+		System.out.println("Ingrese un Numero");
 		int n2 = entrada.nextInt();
-		System.out.println("Ingrese en Numero");
+		System.out.println("Ingrese un Numero");
 		int n3 = entrada.nextInt();
-		System.out.println("Ingrese en Numero");
+		System.out.println("Ingrese un Numero");
 		int n4 = entrada.nextInt();
-		System.out.println("Ingrese en Numero");
+		System.out.println("Ingrese un Numero");
 		int n5 = entrada.nextInt();
-		System.out.println("Ingrese en Numero");
+		System.out.println("Ingrese un Numero");
 		int n6 = entrada.nextInt();
 		
+		System.out.print("\n");
+		System.out.println("Ejercicio 2 con valores: " + n1 + " - " + n2);
 		CalculoEntreDos(n1, n2);
+		
+		System.out.print("\n");
+		System.out.println("Ejercicio 2 con valores: " + n3 + " - " + n4);
 		CalculoEntreDos(n3, n4);
+		
+		System.out.print("\n");
+		System.out.println("Ejercicio 2 con valores: " + n5 + " - " + n6);
 		CalculoEntreDos(n5, n6);
 		
 		// Ejercicio 3
+		System.out.print("\n");
+		System.out.println("Imprimir Separado 5");
+		System.out.println("-------------------");
 		ImprimirSeparado(5);
+		System.out.println("-------------------");
+		
+		System.out.print("\n");
+		System.out.println("Imprimir Separado 1523");
+		System.out.println("-------------------");
 		ImprimirSeparado(1523);
+		System.out.println("-------------------");
+		
+		System.out.print("\n");
+		System.out.println("Imprimir Separado 20");
+		System.out.println("-------------------");
 		ImprimirSeparado(20);
+		System.out.println("-------------------");
+		
+		System.out.print("\n");
+		System.out.println("Imprimir Separado 100000");
+		System.out.println("-------------------");
 		ImprimirSeparado(100000);
+		System.out.println("-------------------");
 		
 		// Ejercicio 4
+		System.out.print("\n");
+		System.out.println("Ejercicio 4 con valores: " + n1 + " - " + n2);
 		MayorPrint(n1, n2);
+		
+		System.out.print("\n");
+		System.out.println("Ejercicio 5 con valores: " + n1 + " - " + n2);
 		MayorPrint(n3, n4);
+		
+		System.out.print("\n");
+		System.out.println("Ejercicio 6 con valores: " + n1 + " - " + n2);
 		MayorPrint(n5, n6);
-		
-		// Ejercicio 5
-		
-		
-		// Ejercicio 6
-		
-		
-		// Ejercicio 7
-
 	}
 
 	// Ejercicio 1
@@ -144,13 +172,4 @@ public class Operadores {
 			System.out.println("La suma de los numeros es " + sumaNumeros);
 		}
 	}
-	
-	// Ejercicio 5
-	
-	
-	// Ejercicio 6
-	
-	
-	// Ejercicio 7
-	
 }

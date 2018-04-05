@@ -1,10 +1,10 @@
 import java.util.Scanner;
-import java.lang.*;
 
 public class Triangulo 
 {
 	static Scanner entrada = new Scanner(System.in);
 	
+	// Consola
 	public static void main(String[] args) 
 	{
 		System.out.println("Ingrese un Lado");
@@ -13,18 +13,47 @@ public class Triangulo
 		double ladoB = entrada.nextDouble();
 		System.out.println("Ingrese un Lado");
 		double ladoC = entrada.nextDouble();
+		System.out.print("\n");
 		
 		// Escaleno
-		System.out.println("Es Escaleno? - " + esEscaleno(ladoA, ladoB, ladoC));
+		if(esEscaleno(ladoA, ladoB, ladoC))
+		{
+			System.out.println("Es Escaleno? - SI");
+		}
+		else
+		{
+			System.out.println("Es Escaleno? - NO");
+		}
 		
 		// Isosceles
-		System.out.println("Es Isoceles? - " + esIsoceles(ladoA, ladoB, ladoC));
+		if(esIsoceles(ladoA, ladoB, ladoC))
+		{
+			System.out.println("Es Isosceles? - SI");
+		}
+		else
+		{
+			System.out.println("Es Isosceles? - NO");
+		}
 		
 		// Equilatero
-		System.out.println("Es Equilatero? - " + esEquilatero(ladoA, ladoB, ladoC));
+		if(esEquilatero(ladoA, ladoB, ladoC))
+		{
+			System.out.println("Es Equilatero? - SI");
+		}
+		else
+		{
+			System.out.println("Es Equilatero? - NO");
+		}
 		
 		// Tiene Angulo Recto
-		System.out.println("Tiene Angulo Recto? - " + tieneAnguloRecto(ladoA, ladoB, ladoC));
+		if(tieneAnguloRecto(ladoA, ladoB, ladoC))
+		{
+			System.out.println("Tiene Angulo Recto? - SI");
+		}
+		else
+		{
+			System.out.println("Tiene Angulo Recto? - NO");
+		}
 	}
 	
 	// Escaleno

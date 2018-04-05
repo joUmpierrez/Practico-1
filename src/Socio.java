@@ -1,9 +1,10 @@
 import java.util.*;
-import java.lang.*;
 
 public class Socio 
 {
 	static Scanner entrada = new Scanner(System.in);
+	
+	// Consola
 	public static void main(String[] args) 
 	{
 		List<Socio> socios = new ArrayList<Socio>();
@@ -13,21 +14,22 @@ public class Socio
 		String nombreA = entrada.next();
 		Socio elSocioA = new Socio(nombreA);
 		socios.add(elSocioA);
+		System.out.print("\n");
 		
 		System.out.println("Ingrese el Nombre");
 		String nombreB = entrada.next();
 		Socio elSocioB = new Socio(nombreB);
 		socios.add(elSocioB);	
+		System.out.print("\n");
 		
 		// Mostrar Socios
 		Iterator<Socio> itr = socios.iterator();
 		while(itr.hasNext())
 		{
-			Object elemento = itr.next();
+			Socio elemento = itr.next();
 			System.out.print(elemento.toString());
 			System.out.print("\n");
 		}
-		
 	}
 	
 	private String nombre;
@@ -40,6 +42,7 @@ public class Socio
     
     private static int proximoNumero;
     
+    // Constructor
     public Socio(String nombre)
     {
     	proximoNumero ++;
@@ -47,8 +50,9 @@ public class Socio
     	this.numero = proximoNumero;
     }
     
+    // Override del metodo toString
     public String toString()
     {
-    	return "El nombre es: " + nombre + " --- Su numero es: " + numero;
+    	return "Numero de Socio: " + numero + " --- Nombre: " + nombre;
     }
 }
